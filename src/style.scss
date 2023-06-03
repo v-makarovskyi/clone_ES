@@ -106,9 +106,11 @@ html {
 }
 
 /* -----------HomePage-------------- */
+
+
 .home-container {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 25px;
+  background: #ffffff;
 
   /* ========> Slider */
   .carousel-inner {
@@ -143,6 +145,53 @@ html {
     }
   }
 }
+
+ /* ========> SideBarr */
+ .sidebar {
+  padding: 5px;
+
+  .sidebar-heading {
+    font-weight: 900;
+    text-align: start;
+  }
+
+  hr {
+    margin-top: 3px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #fcda00;
+    border-radius: 1px;
+  }
+
+  .sidebar-item {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+
+    .sidebar-item__content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .sidebar-img {
+        object-fit: cover;
+        max-width: 90px;
+        height: 50px;
+        margin-right: 1rem;
+      }
+
+      p {
+        font-weight: 700;
+        font-size: .9rem;
+        text-align: left;
+        line-height: 17px;
+      }
+    }
+  }
+ }
 
 /* -----------@media------------------- */
 
