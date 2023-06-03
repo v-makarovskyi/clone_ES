@@ -1,17 +1,25 @@
 import React from 'react'
 import { Container , Row, Col} from 'react-bootstrap'
 import Slider from '../components/Slider'
+import SideBar from '../components/SideBar'
 
 
 export default function HomePage() {
   return (
-    <Container className='home-container'>
+    <div className='home'>
+       <Container className='home-container'>
       <Row>
         <Col md={8}>
-          <Slider />
+          <div className='slider-wrapper'>
+              <Slider />
+          </div>
         </Col>
-        <Col md={4}>Sidebar</Col>
+        <Col md={4}>
+          <SideBar />
+        </Col>
       </Row>
     </Container>
+    </div>
+   
   )
 }
