@@ -107,14 +107,14 @@ html {
 
 /* -----------HomePage-------------- */
 
-
 .home-container {
+  margin: auto;
   padding: 25px;
   background: #ffffff;
 
   /* ========> Slider */
   .carousel-inner {
-    .carousel-item {   
+    .carousel-item {
       img {
         width: 100%;
         height: 100%;
@@ -145,9 +145,62 @@ html {
     }
   }
 }
+/* ========> Map */
+.map {
+  .map-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
- /* ========> SideBarr */
- .sidebar {
+    &__heading {
+      align-self: start;
+      padding-top: 30px;
+      font-weight: 900;
+    }
+
+    hr {
+      width: 100%;
+      margin-top: 3px;
+      margin-bottom: 1.5rem;
+      border: 2px solid #fcda00;
+      border-radius: 1px;
+    }
+    .map-ua_1 {
+      width: 511px;
+      height: 348px;
+
+      .map-ukraine__wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        img.map-ukraine {
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+        }
+
+        img.map_assets-item {
+        position: absolute;
+        opacity: 0;
+        transition: opacity .3s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+      }
+      
+    }
+  }
+  .regions {
+    margin-top: 1.5rem;
+    width: 30%;
+  }
+}
+
+/* ========> SideBar */
+.sidebar {
   padding: 5px;
 
   .sidebar-heading {
@@ -156,6 +209,7 @@ html {
   }
 
   hr {
+    width: 100%;
     margin-top: 3px;
     margin-bottom: 1.5rem;
     border: 2px solid #fcda00;
@@ -185,20 +239,24 @@ html {
 
       p {
         font-weight: 700;
-        font-size: .9rem;
+        font-size: 0.8rem;
         text-align: left;
         line-height: 17px;
+        cursor: pointer;
+      }
+      p:hover {
+        color: rgb(86, 85, 85);
       }
     }
   }
- }
+}
 
 /* -----------@media------------------- */
 
 /* ========> NAVBAR MEDIA */
-@media (max-width: 1475px) {
+@media (max-width: 1200px) {
   .navbar-container {
-    max-width: 94%;
+    max-width: 100%;
   }
   .nav-item {
     border-right: 1px solid rgb(54, 54, 54);
@@ -254,8 +312,8 @@ html {
 }
 
 /* ========> HOME_PAGE MEDIA */
-@media (max-width: 1475px) {
+@media (max-width: 1200px) {
   .home-container {
-    max-width: 94%;
+    max-width: 100%;
   }
 }
