@@ -4,7 +4,7 @@ import Slider from "../components/Slider";
 import SideBar from "../components/SideBar";
 import Map from "../components/Map";
 import BlockVideo from "../components/BlockVideo";
-import Articles from "../components/Articles";
+import ListPublications from "../components/ListPublications";
 
 export default function HomePage() {
   return (
@@ -22,7 +22,7 @@ export default function HomePage() {
             <SideBar />
           </Col>
         </Row>
-          <Articles />
+          <ListPublications />
       </Container>
     </div>
   );
