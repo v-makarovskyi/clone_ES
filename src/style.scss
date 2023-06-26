@@ -8,6 +8,7 @@ html {
   background: #fcda00;
   box-shadow: var(--box-shadow-standart);
   justify-content: flex-end;
+  margin: 0;
 
   &-list {
     display: flex;
@@ -49,6 +50,7 @@ html {
 }
 
 .logo-container {
+  margin: 0;
   background: #ffffff;
   padding: 1.1rem;
   box-shadow: var(--box-shadow-standart) !important;
@@ -58,6 +60,7 @@ html {
 
 .navbar-menu {
   background: var(--main-background) !important;
+  margin: 0;
 
   .navbar-toggler {
     position: relative !important;
@@ -113,7 +116,13 @@ html {
   background: #ffffff;
 
   /* ========> Slider */
+  .carousel {
+   width: 85%;
+   margin: 0 auto;
+  }
+
   .carousel-inner {
+    
     .carousel-item {
       img {
         width: 100%;
@@ -181,22 +190,51 @@ html {
         }
 
         img.map_assets-item {
-        position: absolute;
-        opacity: 0;
-        transition: opacity .3s ease;
+          position: absolute;
+          opacity: 0;
+          transition: opacity 0.3s ease;
 
-        &:hover {
-          opacity: 1;
+          &:hover {
+            opacity: 1;
+          }
         }
       }
-      }
-      
     }
   }
   .regions {
     margin-top: 1.5rem;
     width: 30%;
   }
+}
+
+/* ========> BlockVideo */
+.blockVideo-wrapper {
+  width: 100%;
+}
+
+.blockVideo-heading {
+  text-align: start;
+  padding-top: 30px;
+  font-weight: 900;
+}
+
+.blockVideo-wrapper .blockVideo-container {
+  width: 100%;
+  height: 400px;
+  min-height: 250px;
+
+  video {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+hr {
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #fcda00;
+  border-radius: 1px;
 }
 
 /* ========> SideBar */
@@ -251,10 +289,93 @@ html {
   }
 }
 
+/* ========> Footer */
+.footer {
+ 
+  padding: 0;
+  background: #1b3892;
+  font-size: 0.82rem;
+  color: #fff;
+  padding: 25px 25px 0;
+}
+
+.footer-content {
+   font-size: 1rem;
+   padding-bottom: 1.5em;
+}
+
+.footer hr {
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #fcda00;
+  border-radius: 1px;
+  opacity: .9;
+}
+
+.footer .title {
+  text-align: start;
+  font-weight: 900;
+}
+
+.footer-content .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+
+.footer-content .contacts .contacts-address {
+  font-size: .82em;
+  line-height: 24px;
+  padding-bottom: 1.2em;
+  font-weight: bold;
+}
+
+.footer-content .contacts .contacts-phone {
+  font-size: .82em;
+  font-weight: bold;
+}
+
+.contacts-email {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contacts-email a {
+  text-decoration: none;
+  color: #fff;
+  font-size: .9em;
+  font-weight: bold;
+}
+
+.footer .footer-bottom {
+  padding-bottom: 20px;
+}
+
+.footer .footer-bottom p {
+  text-align: start;
+}
+
+.footer .footer-bottom .hr-bottom {
+  border: 1px solid grey !important;
+}
+
+
+
+
+
+
+
+
 /* -----------@media------------------- */
 
 /* ========> NAVBAR MEDIA */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .navbar-container {
     max-width: 100%;
   }
@@ -271,7 +392,7 @@ html {
 }
 @media (max-width: 992px) {
   .navbar-container {
-    max-width: 97%;
+    max-width: 100%;
   }
   .navbar-collapse {
     margin-left: -35px;
@@ -298,8 +419,8 @@ html {
   .prenavbar {
     justify-content: flex-start;
     padding-left: 20px;
-  }
-  .nav-item {
+  } */
+ /*  .nav-item {
     border-right: 1px solid rgb(54, 54, 54);
     padding: 0.1rem 0.2rem;
     .nav-link {
@@ -309,11 +430,11 @@ html {
       line-height: 17px !important;
     }
   }
-}
+} */
 
 /* ========> HOME_PAGE MEDIA */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .home-container {
     max-width: 100%;
   }
-}
+} */
