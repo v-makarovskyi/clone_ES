@@ -7,7 +7,7 @@ import { CgFacebook } from "react-icons/cg";
 
 export default function NavBar() {
   return (
-    <Container className="navbar-container">
+    <Container className="navbar-container p-0">
       <Row className="prenavbar" /* style={{ justifyContent: "flex-end" }} */>
         <Col lg={5} md={4} xs={6}>
           <ul className="prenavbar-list">
@@ -37,8 +37,11 @@ export default function NavBar() {
       </Row>
       <Row className="logo-container">
         <Col md={4}>
-          <img src={logo} alt="logo" />
-        </Col>
+          <Link to='/'>
+             <img src={logo} alt="logo" />
+          </Link>
+         
+</Col>
       </Row>
       <Row className="navbar-menu">
         <Navbar expand="md" style={{ margin: 0, padding: 0 }}>
@@ -53,7 +56,7 @@ export default function NavBar() {
             >
               <Nav /* className="me-auto" */ /* style={{ alignItems: "center" }} */>
                 <Nav.Item>
-                  <Nav.Link as={Link} to="/">
+                  <Nav.Link as={Link} to="/eurosolidarity/category/news">
                     НОВИНИ
                   </Nav.Link>
                 </Nav.Item>
@@ -81,7 +84,7 @@ export default function NavBar() {
                     </Nav.Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item>
-                    <Nav.Link as={Link} to="/">
+                    <Nav.Link as={Link} to="/eurosolidarity/category/articles">
                       СТАТТІ
                     </Nav.Link>
                   </NavDropdown.Item>
