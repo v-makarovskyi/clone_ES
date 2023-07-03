@@ -69,7 +69,7 @@ export default function Publication({ item, big, list, segment }) {
               : item.text?.slice(0, 2).map((t, index) =>
                   index === 1 ? (
                     <p key={t.id} className="card-description__text">
-                      {t.paragraph.substring(0, 40)} + " [...]"
+                      {t.paragraph.substring(0, 40)} [...]
                     </p>
                   ) : (
                     <p className="card-description__text">{t.paragraph}</p>
