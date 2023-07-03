@@ -3,6 +3,14 @@ html {
   --main-background: rgb(20, 20, 111);
 }
 
+hr {
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: .9rem;
+  border: 2px solid #fcda00;
+  border-radius: 1px;
+}
+
 /* -----------Navbar-------------- */
 .prenavbar {
   background: #fcda00;
@@ -163,7 +171,7 @@ html {
 
     &__heading {
       align-self: start;
-      padding-top: 30px;
+      padding-top: 25px;
       font-weight: 900;
     }
 
@@ -214,7 +222,7 @@ html {
 
 .blockVideo-heading {
   text-align: start;
-  padding-top: 30px;
+  padding-top: 25px;
   font-weight: 900;
 }
 
@@ -229,13 +237,7 @@ html {
   }
 }
 
-hr {
-  width: 100%;
-  margin-top: 3px;
-  margin-bottom: 1.5rem;
-  border: 2px solid #fcda00;
-  border-radius: 1px;
-}
+
 
 /* ========> SideBar */
 .sidebar {
@@ -244,14 +246,6 @@ hr {
   .sidebar-heading {
     font-weight: 900;
     text-align: start;
-  }
-
-  hr {
-    width: 100%;
-    margin-top: 3px;
-    margin-bottom: 1.5rem;
-    border: 2px solid #fcda00;
-    border-radius: 1px;
   }
 
   .sidebar-item {
@@ -339,6 +333,43 @@ hr {
   line-height: 22px;
   color: #000;
 }
+
+/* ========> Photoview */
+.photoview-wrapper {
+  margin: 0;
+}
+
+.photoview-wrapper .photoview {
+  position: relative;
+  padding: 3px;
+  max-width: 253px;
+}
+
+.photoview-wrapper .photoview span {
+  opacity: 0;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #ffffff;
+  font-size: .9rem;
+  font-weight: bold;
+  background-color: #000;
+  width: calc(100% - 5px);
+  height: 20%;
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.photoview-wrapper .photoview span:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+
+
 
 
 /* ========> Footer */
