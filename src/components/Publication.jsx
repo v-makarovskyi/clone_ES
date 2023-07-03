@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, Col } from "react-bootstrap";
 import { CiClock2 } from "react-icons/ci";
 
+
 export default function Publication({ item, big, list, segment }) {
   return (
     <Col md={big ? 12 : 6}>
