@@ -7,6 +7,7 @@ import BlockVideo from "../components/BlockVideo";
 import ListPublications from "../components/ListPublications";
 import Photoview from "../components/Photoview";
 import { articles } from "../data/articles";
+import Announcement from "../components/Announcement";
 
 export default function HomePage() {
   return (
@@ -25,6 +26,7 @@ export default function HomePage() {
           </Col>
         </Row>
         <ListPublications
+          title='СТАТТІ'
           big={false}
           list={true}
           articlesQty={2}
@@ -32,6 +34,7 @@ export default function HomePage() {
           segment="articles"
         />
         <Photoview />
+        <Announcement />
       </Container>
     </div>
   );
