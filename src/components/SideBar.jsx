@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import news1 from "../assets/images/news/news1.jpeg";
 import { CiClock2 } from "react-icons/ci";
 import { news } from "../data/news";
@@ -12,8 +13,14 @@ export default function SideBar() {
         {news.map((item) => (
           <div key={item.id} className="sidebar-item">
             <div className="sidebar-item__content">
-              <img src={item.images[0]} alt="news1" className="img-fluid sidebar-img" />
-              <p>{item.title}</p>
+              <img
+                src={item.image}
+                alt="news1"
+                className="img-fluid sidebar-img"
+              />
+              <Link to={`/eurosolidarity/category/news/${item.id}`}>
+                <p>{item.title}</p>
+              </Link>
             </div>
             <div className="sidebar-item__time">
               <CiClock2 style={{ fontSize: "12px", marginRight: "7px" }} />
