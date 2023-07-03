@@ -8,7 +8,7 @@ import HomePage from "./pages/HomePage";
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Articles from "./pages/Articles";
-
+import ScrollToTop from "./components/ScrollToTop";
 
 
 
@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <ScrollToTop />
       <div id="detail">
         <Outlet />
       </div>
