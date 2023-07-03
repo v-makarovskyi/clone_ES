@@ -1,5 +1,5 @@
 html {
-  --box-shadow-standart: 0px 1px 3px -1px #363636;
+  --box-shadow-standart: 0px 2px 14px 0px #6f6b6b;
   --main-background: rgb(20, 20, 111);
 }
 
@@ -67,6 +67,7 @@ hr {
 /* &&&&& Nav &&&&& */
 
 .navbar-menu {
+  box-shadow: var(--box-shadow-standart);
   background: var(--main-background) !important;
   margin: 0;
 
@@ -119,6 +120,7 @@ hr {
 /* -----------HomePage-------------- */
 
 .home-container {
+  box-shadow: var(--box-shadow-standart);
   margin: auto;
   padding: 25px;
   background: #ffffff;
@@ -342,7 +344,6 @@ hr {
 .photoview-wrapper .photoview {
   position: relative;
   padding: 3px;
-  max-width: 253px;
 }
 
 .photoview-wrapper .photoview span {
@@ -369,12 +370,29 @@ hr {
 }
 
 
+/* ========>  Announcement*/
+.announcement {
+  margin: 0;
+}
+
+.announcement-wrapper {
+  background: #1b3892;
+  margin: 0;
+  padding: 0;
+  border-top: 4px solid #fcda00;
+  border-bottom: 4px solid #fcda00;
+}
+
+.announcement-img__wrapper img {
+  cursor: pointer;
+}
+
 
 
 
 /* ========> Footer */
 .footer {
- 
+  box-shadow: var(--box-shadow-standart);
   padding: 0;
   background: #1b3892;
   font-size: 0.82rem;
