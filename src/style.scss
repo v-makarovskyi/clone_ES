@@ -83,7 +83,7 @@ html {
     border-right: 1px solid rgb(54, 54, 54);
     padding: 0.1rem 0.4rem;
     .nav-link {
-      color: #ffffff;
+      color: #ffffff !important;
       font-size: 0.9rem;
       font-weight: bold !important;
       line-height: 21px !important;
@@ -289,6 +289,58 @@ hr {
   }
 }
 
+/* ========> Publications */
+.publications {
+  background: #ffffff;
+}
+
+.card {
+
+}
+
+.publications-heading {
+  padding-top: 1.5rem;
+  text-align: start;
+  font-weight: 900;
+  margin-left: .8rem;
+  font-size: 1.7rem;
+  line-height: 36px;
+}
+
+.publication-title {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.publication-title__big {
+  font-size: 1.8rem;
+}
+
+.publication-title:hover {
+  color: #1b3892;
+}
+
+.publication-date {
+  font-size: .8rem;
+  color: #1b3892;
+  line-height: 21px;
+  font-weight: 500;
+  padding-bottom: .5rem;
+}
+
+.card-description {
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+}
+
+.card-description__text {
+  padding-bottom: .5rem;
+  font-size: .9rem;
+  line-height: 22px;
+  color: #000;
+}
+
+
 /* ========> Footer */
 .footer {
  
@@ -323,9 +375,6 @@ hr {
   flex-direction: column;
   align-items: flex-start;
 }
-
-
-
 
 .footer-content .contacts .contacts-address {
   font-size: .82em;
