@@ -29,13 +29,23 @@ export default function Publication({ item, big, list, segment }) {
                     cursor: "pointer",
                   }}
                 />
-
-                <Card.Title
+                {
+                  big ? (
+                     <Card.Title
                   className="publication-title"
                   style={{ fontWeight: "900", cursor: "pointer" }}
                 >
                   {item.title}
                 </Card.Title>
+                  ) : (
+                    <Card.Title
+                  className="publication-title__small"
+                >
+                  {item.title}
+                </Card.Title>
+                  )
+                }
+               
               </Link>
 
               <Card.Text className="publication-date">{item.date}</Card.Text>
