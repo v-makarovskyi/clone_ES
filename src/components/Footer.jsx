@@ -8,7 +8,7 @@ export default function Footer() {
       <div id="fb-root"></div>
       <Container className="footer">
         <Row className="footer-content">
-          <Col md={4}>
+          <Col sx={4}>
             <div className="contacts">
               <p className="title">КОНТАКТИ</p>
               <hr className="contacts-hr" />
@@ -28,7 +28,7 @@ export default function Footer() {
               </div>
             </div>
           </Col>
-          <Col md={4}>
+          <Col sx={4}>
             <div className="facebook">
               <p className="title">FACEBOOK</p>
               <hr className="facebook-hr" />
@@ -55,7 +55,7 @@ export default function Footer() {
               </div>
             </div>
           </Col>
-          <Col md={4}>
+          <Col sx={4}>
             <div className="twitter">
               <p className="title">TWITTER</p>
               <hr className="contacts-hr" />
