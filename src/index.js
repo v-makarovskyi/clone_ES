@@ -7,6 +7,7 @@ import Articles from "./pages/Articles";
 import SinglePublication from "./pages/SinglePublication";
 import HomePage from "./pages/HomePage";
 import News from './pages/News'
+import ContactPage from "./pages/ContactPage";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/eurosolidarity/category/news",
         element: <News />,
+      },
+      {
+        path: "/eurosolidarity/contacts",
+        element: <ContactPage />,
       },
     ],
   },
